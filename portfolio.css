@@ -1,0 +1,146 @@
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+    height: 85%;
+    object-position: 50% 50%;
+    
+    object-fit: cover;
+
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+  object-fit: cover;
+  height: 100%;
+  object-position: 50% 50%;
+  
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 40%;
+  width: auto;
+  margin-top: 2rem;
+  padding: 1rem;
+  color: rgb(226, 164, 164);
+  font-weight: bold;
+  font-size: 2rem;
+  transition: 0.5s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+.slider-img {
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+/* Caption text */
+.texxt {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  color: #f2f2f2;
+  background-color: rgba(0, 0, 0, 0.5);
+  border-radius: 1rem;
+  font-size: 1rem;
+  padding: .5 .5rem;
+  position: absolute;
+  bottom: .7rem;
+  width: 95%;
+  text-align: center;
+}
+
+.portfolio-header {
+    background-color:  white;
+    flex-direction: column;
+    text-align: center;
+    color: var(--secondary-brown-color-warm);
+    border-radius: 1rem;
+    border: 2px solid var(--secondary-brown-color-warm);
+    padding: .1rem;
+    margin-bottom: 2rem;
+}
+
+.numbertext {
+  color: #f2f2f2;
+  font-size: .8rem;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+
+/* The dots/bullets/indicators */
+.dot {
+  cursor: pointer;
+  height: 1rem;
+  width: 1rem;
+  margin: 0 2px;
+  background-color: rgb(189, 88, 105);
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #e99191;
+}
+
+.link {
+  color: white;
+  text-decoration: solid;
+  
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+
+
+@media (min-width:823px) {
+    
+.slideshow-container {
+    height: 87%;
+    object-position: 50% 50%;
+    overflow: hidden;
+
+}
+.mySlides {
+    display: none;
+    object-fit: cover;
+    object-fit: cover;
+    object-position: 50% 50%;
+    
+  }
+  .slider-img {
+    height: auto;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+  
+
+
+
+  }

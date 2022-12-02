@@ -1,0 +1,163 @@
+main {
+    height: 60rem;
+    position: relative;
+    background-image: url(./images/dot.jpg);
+    background-repeat: repeat;
+    z-index: 0;
+
+}
+
+.main-area {
+    z-index: 0.2;
+    overflow: hidden;
+    padding: 0.5rem;
+    align-content: center;
+    height: 50rem;
+    background-color: #F2F0EA;
+    position: relative;
+    top: 4.6rem;
+    border: #CF8484;
+    border-radius: 2px;
+    border-style: solid;
+}
+.info-container {
+    position: absolute;
+    height: 95%;
+    width: 90%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+.picture-text-container {
+    display: flex;
+    text-align: center;
+    align-items: center;
+    position: absolute;
+    left:-5%;
+    top: 20%;
+    height: 70%;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+}
+
+.main-pic {
+    height: 30%;
+
+}
+
+.info-title-container {
+    margin-top: 1.5rem;
+    width: 15rem;
+    padding: 1rem;
+    border-radius: 2rem;
+    border:3px solid #4E2F1A;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    background-color: #ffffff;
+}
+
+.title-name {
+    width: 13rem;
+}
+
+.info-about-me-p {
+    width: 60%;
+    text-align: center;
+    padding-right: 5px;
+    font-size: .9rem;
+    font-family: 'Gluten', cursive;
+    color: #402A1B;
+    
+}
+
+.about-btn {
+    height: 3.2rem;
+    width: 5.2rem;
+    border-radius: 2rem;
+    margin: .8rem;
+    background-color: #CF8484;
+    font-family: 'Gluten', cursive;
+    color: white;
+    border-style: none;
+    cursor: pointer;
+}
+
+.contact-img {
+
+    width: 20rem;
+    margin-left: 0%;
+    top: 0%;
+}
+@media (min-width:823px) { 
+    main {
+        overflow: hidden;
+        height: 60rem;
+        display: flex;
+        justify-content: center;
+        align-content: center;
+    }
+
+    .main-area {
+        padding: 2rem;
+        height: 40rem;
+        min-width: 823px;
+        width: 1024px;
+        background-color: #F2F0EA;
+        border:3px solid #CF8484;
+        border-radius: 1rem;
+        position: relative;
+        top: 22%;
+    }
+
+    .info-container {
+        position: absolute;
+        top:5%;
+        left: 10%;
+        height: auto;
+        width: 80%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+    .picture-text-container {
+        align-items: center;
+        left:5%;
+        top: 40%;
+        height: 40%;
+        width: 85%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    
+    .main-pic {
+        height: 100%;
+    }
+    .info-about-me-p {
+        width: 48%;
+        padding-right: 5px;
+        font-size: 1.4rem;
+        font-family: 'Gluten', cursive;
+        color: #402A1B;
+        
+    }
+
+    .info-title-container {
+        width: 17rem;
+
+    }
+    
+    .title-name {
+        width: 15rem;
+    }
+    .about-btn {
+        height: 4.2rem;
+        width: 6.2rem;
+        border-radius: 2rem;
+        font-size: 1.2rem;
+    }
+
+
+ }
